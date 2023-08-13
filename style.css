@@ -1,0 +1,91 @@
+*{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0 20px 0;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/pattern-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+.searchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#searchInput{
+    background-color: #000;
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+    aspect-ratio: 1/1;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+input{
+    width: 400px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    border: 0;
+}
+.locationBar{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px 15px 15px 0;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    translate: 0 49px;
+    z-index: 1;
+}
+h2{
+    color: hsl(0, 0%, 59%);
+    font-size: 10px;
+}
+hr{
+    color: hsl(0, 0%, 59%);
+    height: 70%;
+}
+.card{
+    width: 25%;
+    padding-left: 15px;
+}
+section{
+    width: 100%;
+    height: 100%;
+}
+#map { 
+    height: 100%; 
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}

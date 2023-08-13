@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>IP Address Tracker</h1>
+      <div class="searchBar">
+        <input type="text" id="ipInput" placeholder="Search for any IP address or domain">
+        <div id="searchInput">
+          <img src="images/icon-arrow.svg" alt="arrow">
+        </div>
+      </div>
+      <div class="locationBar">
+        <div class="card">
+          <h2>IP Address</h2>
+          <p id="ipAdress" >192.212.174.101</p>
+        </div>
+        <hr>
+        <div class="card">
+          <h2>Location</h2>
+          <p id="location">Brooklyn,NY 10001</p>
+        </div>
+        <hr>
+        <div class="card">
+          <h2>Timezone</h2>
+          <p id="timezone">UTC-05:00</p>
+        </div>
+        <hr>
+        <div class="card">
+          <h2>ISP</h2>
+          <p id="isp">SpaceX Starlink</p>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div id="map"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
